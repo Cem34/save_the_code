@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace SaveTheCode\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
@@ -24,3 +24,10 @@ class RedirectIfAuthenticated
         return $next($request);
     }
 }
+
+
+//composant d'authantification qui gère la co et la déco de l'user.
+
+//gérer l'authantification
+
+//Auth::check() regarde si l'utilisateur est co

@@ -1,0 +1,40 @@
+body{
+	background-color: #e4e4e4;
+}
+
+h1#title_lose{
+	color:#a40000;
+}
+
+.container{
+	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  	transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+.col-md-2{
+	text-align:right
+}
+
+hr{
+	border: 1px dashed black;
+}
+
+.social_logo{
+	width:20px;
+	margin-right:10px;
+}
+
+#social_network{
+	padding-bottom:20px;
+}
+
+.facebook{
+	margin-right:50px;
+}
+
+.button_home{
+	text-decoration:none;
+	color:black;
+}
+
+

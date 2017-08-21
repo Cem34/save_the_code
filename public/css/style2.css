@@ -1,0 +1,156 @@
+
+
+body{
+	background-image: url(../img/background_bis.jpg);
+	height: 100%;
+  	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 5%
+}
+
+@font-face {
+    font-family: 'DS-DIGIT';
+    src: url('../font/DS-DIGIT.TTF');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../font/BebasNeue.otf');
+}
+
+.time{
+	font-family: 'DS-DIGIT',Arial, serif;
+	font-size: 70px;
+	font-weight:900;
+	color:#fd0000;
+}
+
+.container_time{
+	margin-left:50px;
+	border: 2px solid grey;
+ 	background-image: linear-gradient(to right top, rgb(0, 0, 0), rgb(133, 140, 131)), linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(to left, rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(to top, rgb(0, 0, 0), rgb(22, 23, 23));
+ 	background-origin: border-box;
+  	background-size: 100% 10px, 10px 100%, 100% 10px, 10px 100%;
+  	background-position: top left, top right, bottom right, bottom left;
+ 	background-repeat: no-repeat;
+	width:250px;
+	text-align:center;
+	background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, #dc0d0d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #dc0d0d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, #dc0d0d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, #3d1010); /* Standard syntax */
+    height:70px;
+    line-height: 70px; /* hauteur de ligne (identique) */
+    white-space: nowrap;
+}
+
+.navbar-default {
+    background-color:inherit;
+    border:none;
+}
+
+.navbar-brand {
+    font-family: 'DS-DIGIT';
+    font-size: 45px;
+    color:white!important;
+    margin-left:35px;
+    margin-top:20px;
+    border-bottom:1px dashed;
+}
+
+.login_register{
+	float:right;
+	margin-top:20px
+}
+
+.login_register li{
+	display:inline;
+}
+
+.login_register .log_reg a{
+	font-family: 'DS-DIGIT';
+	font-size:45px;
+	color:white;
+	margin-left:20px;
+	margin-right:20px
+}
+
+.log_name{
+	float:right;
+	margin-top:20px;
+	font-family: 'DS-DIGIT';
+	font-size: 45px;
+	text-decoration: none;
+	margin-right:20px;
+	list-style-type:none;
+}
+
+.user_name{
+	text-decoration:none!important;
+}
+
+.log_name a{
+	color:white;
+	text-decoration:none;
+}
+
+#logo{
+	width:200px;
+	/* border: 1px solid; */
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.bloc{
+	margin-top:50px;
+}
+
+.login_register li a{
+	font-family: 'DS-DIGIT';
+	font-size:45px;
+	color:white;
+	margin-left:20px;
+	margin-right:20px
+}
+
+.login_register li a:hover{
+	text-decoration:none;
+}
+
+.dropdown-menu li a{
+	font-size:20px;
+	color:black;
+	text-decoration:none;
+}
+
+.dropdown-menu li a:hover{
+	background-color:white;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left:0px;
+    margin-top:10px;
+ 	width:150px!important;
+    background-color: #fff;
+	border:1px dashed red;
+    border-radius: 4px;
+    min-width: 0;
+
+}
+
+.navbar-toggle {
+    margin-top: 50px!important;
+}
+
+@media screen and (max-width:767px){
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	    border:none!important;
+	    text-align: center;
+	}
+	.login_register{
+		float:none;
+	}
+}

@@ -1,0 +1,88 @@
+body{
+	height:100%;
+	margin: 0;
+}
+
+body{
+	background-image: url(../img/home.jpg);
+	height: 100%;
+  	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 5%
+}
+
+/*----- Timer -----*/
+
+
+@font-face {
+    font-family: 'DS-DIGIT';
+    src: url('../font/DS-DIGIT.TTF');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../font/BebasNeue.otf');
+}
+
+span{
+	font-family: 'DS-DIGIT',Arial, serif;
+	font-size: 70px;
+	font-weight:900;
+	color:#fd0000;
+}
+
+.container_time{
+	margin-top:50px;
+	margin-left:50px;
+	border: 2px solid grey;
+ 	background-image: linear-gradient(to right top, rgb(0, 0, 0), rgb(133, 140, 131)), linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(to left, rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(to top, rgb(0, 0, 0), rgb(22, 23, 23));
+ 	background-origin: border-box;
+  	background-size: 100% 10px, 10px 100%, 100% 10px, 10px 100%;
+  	background-position: top left, top right, bottom right, bottom left;
+ 	background-repeat: no-repeat;
+	width:250px;
+	text-align:center;
+	background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, #dc0d0d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #dc0d0d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, #dc0d0d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, #3d1010); /* Standard syntax */
+}
+
+/*----- End Timer -----*/
+
+/*----- Opacity text -----*/
+
+.text_opacity p{
+	width:25%;
+	font-size:20px;
+	background-color:rgba(0, 0, 0, 0.63);
+	color:white;
+	padding-left:50px;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-right:15px;
+	word-spacing: 3px;
+	text-transform:uppercase;
+	font-family: 'BebasNeue';
+	margin-bottom:35px;
+}
+
+/*----- End Opacity text -----*/
+
+
+/*----- Button home -----*/
+
+#button_home{
+	border:3px solid #dbdbdb;
+	padding:13px 50px;
+	color:white;
+	background-color:#14192f;
+	font-family: 'BebasNeue';
+	word-spacing: 3px;
+	letter-spacing:1px;
+	text-decoration:none;
+	margin-left:50px;
+}
+
+/*----- End Button home -----*/

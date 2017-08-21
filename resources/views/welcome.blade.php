@@ -1,95 +1,41 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="fr">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="language" content="fr"/>
+        <meta name="author" content="Alpyildiz, Cem" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="SaveTheCode une plateforme de recrutement"/>
+        <meta name="keywords" content="montpellier, ssii, société de service, développeur, cjd, geek, informatique, web, java, php, .net, c++, super dev"/>
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <title>Home | SaveTheCode</title>
 
         <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
+    <body onload="majChrono();demarrerChrono()">
+        <div class="container_time">
+            <span class="time" id="minute">0 :</span>
+            <span class="time" id="second">0</span>
+        </div>
+        <div class="text_opacity">
+            <p>dr. asi mauve et son équipe d'ingénieurs ont participé à l'élaboration d'un robot intéligent : hale 9k</p>
+        </div>
+        @if (Route::has('login'))   <!--- Verif si il y'a une route "login", voir dans /vendor/laravel/framework/src/Illuminate/Routing/Router.php !-->
+            @if (Auth::check())
+                <a href="{{ url('/home') }}" id="button_home">Retour exercice</a>
+            @else
+                <a href="{{ url('/register') }}" id="button_home">Relève le défi</a>
+                <!--<a href="{{ url('/register') }}" id="button_home">Register</a>-->
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+         @endif
         </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

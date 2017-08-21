@@ -11,23 +11,23 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', function () {
+    return view('welcome');
+});
 
+Auth::routes();
 
-Route::get('{n}', function($n) {
-	return 'Je suis la page ' . $n . ' ! '; 
-})->where('n','[1-3]');
+Route::get('/home', 'HomeController@index');
 
-Route::get('article/{n}', 'ArticleController@show')->where('n','[0-9]+');
+Route::get('/logout', 'Auth\LoginController@logout');
 
+Route::get('/lose', function (){
+	return view('lose');
+});
 
-Route::get('facture/{n}','FactureController@show')->where('n','[0-9]+');
+Route::get('/win', function(){
+	return view('win');
+});
 
+Route::get('/API/eval', 'APIController@evalCode');
 
-Route::get('users', 'UsersController@getInfos');
-
-Route::post('users', 'UsersController@postInfos');
-
-
-Route::get('contact', 'ContactController@getForm');
-Route::post('contact', 'ContactController@postForm');
